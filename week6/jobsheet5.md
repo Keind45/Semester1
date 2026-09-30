@@ -1,9 +1,9 @@
 # JOBSHEET 5 - PEMILIHAN BERSARANG
 
 **Identitas Mahasiswa:**
-* **Nama:** [Nama Mahasiswa]
-* **NIM:** [NIM Mahasiswa]
-* **Kelas / No. Presensi:** [1A / 01]
+* **Nama:** ACHMAD KAKA ANDRIAN
+* **NIM:** 264107020210
+* **Kelas / No. Presensi:** 1D/01
 
 ---
 
