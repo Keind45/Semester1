@@ -10,7 +10,9 @@ public class Tugas3No2 {
         lembar = sc.nextInt();
         System.out.println("Jumlah jilid: ");
         jilid = sc.nextInt();
-        
+
+        System.out.println("lembar: " + lembar);
+        System.out.println("jilid: " + jilid);
         totalBiaya = (lembar * biayaCetak) + (jilid * biayaPerjilid);
         System.out.println("Total Biaya: " + totalBiaya);
     }
