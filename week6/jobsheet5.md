@@ -21,24 +21,40 @@ Berikut adalah tujuan pelaksanaan praktikum pada bab ini:
 
 ### 2.1 Percobaan 1: Nested IF untuk Mengecek Syarat Ujian Skripsi
 
-Ini adalah paragraf contoh yang menjelaskan gambaran singkat mengenai percobaan pertama. Pada bagian ini, mahasiswa diminta untuk menerapkan kondisi `if-else` sederhana.
+Ini adalah paragraf contoh yang menjelaskan gambaran singkat mengenai percobaan pertama. Pada bagian ini, mahasiswa diminta untuk menerapkan kondisi nested if untuk mengecek syarat ujian skripsi seorang mahasiswa.
 
 #### 2.1.1 Kode Program Java
 ```java
 // Contoh kode program dummy Percobaan 1
 import java.util.Scanner;
 
-public class Percobaan1 {
+public class nestedUjianSkripsi01 {
     public static void main(String[] args) {
-        Scanner sc = new Scanner(System.in);
-        System.out.print("Masukkan nilai: ");
-        int nilai = sc.nextInt();
+        String pesan;
 
-        if (nilai >= 75) {
-            System.out.println("Status: LULUS");
+        Scanner sc = new Scanner(System.in);
+        System.out.println("Apakah mahasiswa sudah bebas kompen? (ya/tidak): ");
+        String bebasKompen = sc.nextLine().trim();
+
+        System.out.println("Masukan jumlah log bimbingan pembimbing 1: ");
+        int bimbinganP1 = sc.nextInt();
+        System.out.println("Masukan jumlah log bimbingan pembimbing 2: ");
+        int bimbinganP2 = sc.nextInt();
+
+        if(bebasKompen.equalsIgnoreCase("Ya")) {
+            if (bimbinganP1 >= 8 && bimbinganP2 >= 4) {
+                pesan = "Semua syarat terpenuhi. Mahasiswa boleh mendaftar ujian skripsi";
+            } else if (bimbinganP1 < 8 && bimbinganP2 < 4) {
+                pesan = "Gagal! Log bimbingan P1 belum mencapai 8 kali dan P2 kurang dari 4 kali";
+            } else if (bimbinganP1 < 8) {
+                pesan = "Gagal! Log bimbingan P1 belum mencapai 8 kali";
+            } else {
+                pesan = "Gagal! Log bimbingan P2 belum mencapai 4 kali";
+            }
         } else {
-            System.out.println("Status: TIDAK LULUS");
+                pesan = "Gagal! Mahasiswa masih memiliki tanggungan kompen";
         }
+            System.out.println(pesan);
     }
 }
 ```
