@@ -19,18 +19,22 @@ public class tugas2SeleksiAsisten01 {
         System.out.println("Berapa nilai wawancara beliau: ");
         wawancara = sc.nextInt();
 
-        if (mahasiswaAktif && !dalamSanksi) {
-            if (nilaiDaspro >= 80 || sertifikat) {
-                if (wawancara >= 75) {
-                    pesan = "Anda di terima bro";
+        if (mahasiswaAktif) {
+            if (!dalamSanksi) {
+                if (nilaiDaspro >= 80 || sertifikat) {
+                    if (wawancara >= 75) {
+                        pesan = "Anda di terima bro";
+                    } else {
+                        pesan = "Maaf anda ditolak karna nilai wawancara anda kurang dari 75 bro";
+                    }
                 } else {
-                    pesan = "Maaf anda ditolak karna nilai wawancara anda kurang dari 75 bro";
+                pesan = "Maaf anda ditolak karna nilai daspro anda kurang dari 80 dan anda juga tidak memiliki sertifikat bro";
                 }
             } else {
-                pesan = "Maaf anda ditolak karna nilai daspro anda kurang dari 80 dan anda juga tidak memiliki sertifikat bro";
+                pesan = "Maaf anda di tolak anda sedang dalam sanksi bro";
             }
         } else {
-            pesan = "Maaf anda ditolak karna anda bukan mahasiswa atau anda sedang dalam sanksi akademik bro";
+            pesan = "Maaf anda ditolak karna anda bukan mahasiswa bro";
         }
         System.out.println(pesan);
     }

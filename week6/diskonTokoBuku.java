@@ -2,8 +2,8 @@ import java.util.Scanner;
 
 public class diskonTokoBuku {
     public static void main(String[] args) {
-        String hari, jenis, pesan = null;
-        int jumlah;
+        String hari, jenis;
+        double jumlah, diskon, diskontotal;
 
         Scanner  sc = new Scanner(System.in);
 
@@ -17,28 +17,29 @@ public class diskonTokoBuku {
         if (hari.equalsIgnoreCase("rabu")) {
             if (jenis.equalsIgnoreCase("kamus")) {
                 if (jumlah > 2) {
-                    pesan = "Diskon sebesar 12%";
+                    diskon = 0.12;
                 } else {
-                    pesan = "Diskon sebesar 10%";
+                    diskon = 0.10;
                 }
             } else if (jenis.equalsIgnoreCase("novel")) {
                 if (jumlah > 3) {
-                    pesan = "Diskon sebesar 9%";
+                    diskon = 0.09;
                 } else if (jumlah <= 3) {
-                    pesan = "Diskon sebesar 8%";
+                    diskon = 0.08;
                 } else {
-                    pesan = "Diskon sebesar 7%";
+                    diskon = 0.07;
                 }
             } else {
                     if(jumlah > 3) {
-                        pesan = "Diskon sebesar 5%";
+                        diskon = 0.05;
                     } else {
-                        pesan = "Tidak ada diskon bro";
+                        diskon = 0;
                     }
             }
         } else {
-            pesan = "Bukan hari rabu tidak ada diskon";
+            diskon = 0;
         }
-            System.out.println(pesan);
+            diskontotal = 100 * diskon;
+            System.out.println("Diskon anda adalah: " + diskontotal + "%");
     }
 }
