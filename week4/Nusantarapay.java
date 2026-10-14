@@ -1,32 +1,23 @@
 import java.util.Scanner;
-
 public class Nusantarapay {
     public static void main(String[] args) {
-
         Scanner sc = new Scanner(System.in);
-
         String statusAkun;
         double nominal;
         double saldo;
         boolean isBedaNegara;
         int jam;
         String statusAkhir;
-
         System.out.print("Status akun: ");
         statusAkun = sc.nextLine();
-
         System.out.print("Nominal transaksi: ");
         nominal = sc.nextDouble();
-
         System.out.print("Saldo: ");
         saldo = sc.nextDouble();
-
         System.out.print("Transaksi beda negara (true/false): ");
         isBedaNegara = sc.nextBoolean();
-
         System.out.print("Jam transaksi (0-23): ");
         jam = sc.nextInt();
-
         if (statusAkun.equals("BLACK-LISTED")) {
             statusAkhir = "REJECTED_BLACKLIST";
         } else if (nominal > saldo) {
@@ -42,7 +33,6 @@ public class Nusantarapay {
         } else {
             statusAkhir = "APPROVED";
         }
-
         System.out.println("Status transaksi: " + statusAkhir);
     }
 }
