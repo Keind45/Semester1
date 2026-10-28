@@ -59,7 +59,11 @@ public class nestedUjianSkripsi01 {
 ```
 
 #### 2.1.2 Hasil Running / Screenshot Output
+<<<<<<< HEAD
 ![percobaan1](/nested2.png)
+=======
+![percobaan1](./nested2.png)
+>>>>>>> f13509636581cd044c934f5cfbcec1481f0c73dc
 
 #### 2.1.3 Jawaban Pertanyaan Refleksi
 
@@ -80,6 +84,10 @@ public class nestedUjianSkripsi01 {
 
 * **Jawab:** Pertama, program memeriksa apakah mahasiswa sudah bebas kompen. Jika belum, program menampilkan bahwa mahasiswa masih memiliki tanggungan kompen. Jika sudah bebas kompen, program memeriksa jumlah bimbingan Pembimbing 1 dan Pembimbing 2. Jika keduanya memenuhi batas minimal, mahasiswa diperbolehkan mendaftar ujian. Jika salah satu atau keduanya belum memenuhi, program menampilkan alasan kegagalannya.
 
+<<<<<<< HEAD
+=======
+=======
+>>>>>>> f13509636581cd044c934f5cfbcec1481f0c73dc
 
 #### 2.1.3 Jawaban Pertanyaan Refleksi
 
@@ -226,7 +234,11 @@ public class nestedAksesLab01 {
 
 #### 2.3.2 Hasil Running / Screenshot Output
 <<<<<<< HEAD
+<<<<<<< HEAD
 ![Foto Percobaan 1](/nested.png)
+=======
+![Foto Percobaan 3](./nested2.png)
+>>>>>>> f13509636581cd044c934f5cfbcec1481f0c73dc
 
 #### 2.3.3 Jawaban Pertanyaan Refleksi
 
