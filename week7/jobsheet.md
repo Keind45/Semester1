@@ -4,6 +4,8 @@
 * **Nama:** ACHMAD KAKA ANDRIAN
 * **NIM:** 264107020210
 * **Kelas / No. Presensi:** TI-1D / 01
+* **Username GitHub:** Keind45
+* **Link Repository:** https://github.com/Keind45/Semester1
 
 ---
 
@@ -35,20 +37,20 @@ git config --global user.email "dgvinzs@gmail.com"
 ![Konfigurasi Identitas Git](./gambar/persiapan_config.png)
 
 #### 2.1.3 Catatan / Kendala
-* [Tuliskan kendala saat instalasi atau konfigurasi (jika ada), atau tulis "Tidak ada kendala"]
+* Tidak ada kendala.
 
 ---
 
 ### 2.2 Percobaan 1: Menyiapkan Repository
 
-Pada percobaan ini, mahasiswa membuat repository `PraktikumDaspro[NoPresensi]` di GitHub, melakukan *clone* ke komputer melalui VS Code, membuat file `README.md`, lalu melakukan proses *add*, *commit*, dan *push*.
+Pada percobaan ini, mahasiswa membuat repository `PraktikumDaspro01` di GitHub, melakukan *clone* ke komputer melalui VS Code, membuat file `README.md`, lalu melakukan proses *add*, *commit*, dan *push*.
 
 #### 2.2.1 Isi File README.md
 ```markdown
 Ini adalah repository pertama saya
-Nama  : [Isi Nama]
-NIM   : [Isi NIM]
-Kelas : [Isi Kelas]
+Nama  : ACHMAD KAKA ANDRIAN
+NIM   : 264107020210
+Kelas : TI-1D
 ```
 
 #### 2.2.2 Screenshot Hasil
@@ -65,13 +67,13 @@ Kelas : [Isi Kelas]
 #### 2.2.3 Jawaban Pertanyaan Analisis
 
 * **Pertanyaan 1:** Apa perbedaan antara *Add (Stage)*, *Commit*, dan *Push*?
-* **Jawab:** [Tuliskan jawaban]
+* **Jawab:** *Add (Stage)* memilih perubahan file yang akan disimpan dengan memasukkannya ke staging area. *Commit* menyimpan perubahan yang sudah di-stage sebagai versi baru di local repository (komputer sendiri). *Push* mengirim commit dari local repository ke GitHub sehingga bisa dilihat secara online.
 
 * **Pertanyaan 2:** Apa arti status huruf `U` dan `A` pada file di VS Code?
-* **Jawab:** [Tuliskan jawaban]
+* **Jawab:** `U` (Untracked) berarti file baru yang belum dilacak oleh Git. `A` (Added) berarti file sudah dimasukkan ke staging area dan siap di-commit.
 
 * **Pertanyaan 3:** Mengapa identitas Git (`user.name` dan `user.email`) perlu diatur sebelum melakukan commit?
-* **Jawab:** [Tuliskan jawaban]
+* **Jawab:** Karena identitas tersebut dicatat sebagai pembuat setiap commit. Jika belum diatur, Git menolak commit dan menampilkan pesan agar `user.name` dan `user.email` dikonfigurasi terlebih dahulu.
 
 ---
 
@@ -79,23 +81,44 @@ Kelas : [Isi Kelas]
 
 Pada percobaan ini, mahasiswa membuat program kasir sederhana untuk menghitung total bayar dan kembalian. Harga Kopi Susu Gula Aren adalah Rp18.000 per cup, dengan diskon 10% untuk pembelian minimal Rp100.000.
 
-#### 2.3.1 Kode Program Java (`StudiKasus1[NoPresensi].java`)
+#### 2.3.1 Kode Program Java (`StudiKasus101.java`)
 ```java
 import java.util.Scanner;
 
-public class StudiKasus1[NoPresensi] {
+public class StudiKasus101 {
     public static void main(String[] args) {
-        // [Deklarasi variabel sesuai flowchart]
+        int hargaPerCup = 18000;
+        int jumlahCup, uangBayar;
+        int totalHarga, diskon, totalBayar;
+        int kembalian, kurang;
 
-        // [Input jumlahCup dan uangBayar]
+        Scanner sc = new Scanner(System.in);
 
-        // [Hitung totalHarga dan diskon]
+        System.out.print("Masukkan jumlah cup  : ");
+        jumlahCup = sc.nextInt();
+        System.out.print("Masukkan uang bayar  : ");
+        uangBayar = sc.nextInt();
 
-        // [Pemilihan: totalHarga >= 100000 ?]
+        totalHarga = jumlahCup * hargaPerCup;
+        diskon = 0;
 
-        // [Hitung totalBayar dan tampilkan output]
+        if (totalHarga >= 100000) {
+            diskon = totalHarga * 10 / 100;
+        }
 
-        // [Pemilihan: uangBayar >= totalBayar ? kembalian : kurang]
+        totalBayar = totalHarga - diskon;
+
+        System.out.println("Total harga          : Rp " + totalHarga);
+        System.out.println("Diskon               : Rp " + diskon);
+        System.out.println("Total bayar          : Rp " + totalBayar);
+
+        if (uangBayar >= totalBayar) {
+            kembalian = uangBayar - totalBayar;
+            System.out.println("Kembalian            : Rp " + kembalian);
+        } else {
+            kurang = totalBayar - uangBayar;
+            System.out.println("Uang tidak cukup, kurang Rp " + kurang);
+        }
     }
 }
 ```
@@ -108,27 +131,27 @@ public class StudiKasus1[NoPresensi] {
 | Uji | jumlahCup | uangBayar | Total Harga | Diskon | Total Bayar | Output Kembalian / Kurang |
 | --- | --- | --- | --- | --- | --- | --- |
 | 1 | 3 | 50000 | Rp 54000 | Rp 0 | Rp 54000 | Uang tidak cukup, kurang Rp 4000 |
-| 2 | [isi] | [isi] | [isi] | [isi] | [isi] | [isi] |
-| 3 | [isi] | [isi] | [isi] | [isi] | [isi] | [isi] |
+| 2 | 6 | 100000 | Rp 108000 | Rp 10800 | Rp 97200 | Kembalian Rp 2800 |
+| 3 | 5 | 100000 | Rp 90000 | Rp 0 | Rp 90000 | Kembalian Rp 10000 |
 
 #### 2.3.4 Riwayat Commit
 | No | Commit Message | Keterangan |
 | --- | --- | --- |
-| 1 | `SK1: input dan deklarasi variabel` | [isi] |
-| 2 | `SK1: logika diskon dan kembalian` | [isi] |
+| 1 | `SK1: input dan deklarasi variabel` | Commit setelah input dan deklarasi variabel selesai dibuat |
+| 2 | `SK1: logika diskon dan kembalian` | Commit setelah logika pemilihan diskon dan kembalian selesai |
 
 ![Riwayat Commit SK1](./gambar/sk1_commit.png)
 
 #### 2.3.5 Jawaban Pertanyaan Analisis
 
 * **Pertanyaan 1:** Pada jumlah cup berapa diskon mulai diberikan? Jelaskan perhitungannya!
-* **Jawab:** [Tuliskan jawaban]
+* **Jawab:** Diskon mulai diberikan pada 6 cup. Untuk 5 cup, total harga 5 x 18000 = Rp 90000 (kurang dari Rp 100000), sedangkan untuk 6 cup total harga 6 x 18000 = Rp 108000 (memenuhi syarat >= 100000), sehingga diskon 10% = Rp 10800.
 
 * **Pertanyaan 2:** Mengapa variabel `diskon` diberi nilai awal `0` sebelum pemeriksaan kondisi?
-* **Jawab:** [Tuliskan jawaban]
+* **Jawab:** Agar `diskon` selalu punya nilai, meskipun kondisi `totalHarga >= 100000` tidak terpenuhi. Jika tidak diberi nilai awal, variabel bisa belum terisi saat `totalBayar = totalHarga - diskon` dihitung, sehingga terjadi error.
 
 * **Pertanyaan 3:** Jelaskan alur program dari input sampai output sesuai flowchart!
-* **Jawab:** [Tuliskan jawaban]
+* **Jawab:** Program menerima input jumlahCup dan uangBayar, lalu menghitung totalHarga dan mengatur diskon = 0. Jika totalHarga >= 100000, diskon dihitung 10% dari totalHarga. Selanjutnya totalBayar dihitung dari totalHarga dikurangi diskon, lalu totalHarga, diskon, dan totalBayar ditampilkan. Terakhir, jika uangBayar >= totalBayar program menampilkan kembalian, jika tidak program menampilkan pesan uang tidak cukup beserta jumlah kekurangannya.
 
 ---
 
@@ -136,21 +159,63 @@ public class StudiKasus1[NoPresensi] {
 
 Pada percobaan ini, mahasiswa membuat program untuk mengecek status dana penghargaan prestasi mahasiswa menggunakan *Nested IF* (kedalaman maksimal 3 tingkat). Program hanya menanyakan data yang diperlukan sesuai jenis kegiatan.
 
-#### 2.4.1 Kode Program Java (`StudiKasus2[NoPresensi].java`)
+#### 2.4.1 Kode Program Java (`StudiKasus201.java`)
 ```java
 import java.util.Scanner;
 
-public class StudiKasus2[NoPresensi] {
+public class StudiKasus201 {
     public static void main(String[] args) {
-        // [Deklarasi variabel: nama, jenisKegiatan, jumlahDokumen, peringkat, statusPKM]
+        String nama, jenis, status;
+        int jumlahDokumen, peringkat, statusPKM;
 
-        // [Input nama, jenis kegiatan, dan jumlah dokumen]
+        Scanner sc = new Scanner(System.in);
 
-        // [Cabang lomba: BELMAWA / BAKORMA / Mandiri -> cek dokumen, cek peringkat]
+        System.out.print("Nama mahasiswa  : ");
+        nama = sc.nextLine().trim();
+        System.out.print("Jenis kegiatan (BELMAWA/BAKORMA/MANDIRI/PKM/LAINNYA) : ");
+        jenis = sc.nextLine().trim();
 
-        // [Cabang PKM -> cek dokumen, cek status pendanaan]
+        if (jenis.equalsIgnoreCase("BELMAWA") || jenis.equalsIgnoreCase("BAKORMA")
+                || jenis.equalsIgnoreCase("MANDIRI")) {
+            // Cabang lomba
+            System.out.print("Jumlah dokumen  : ");
+            jumlahDokumen = sc.nextInt();
+            System.out.print("Peringkat juara : ");
+            peringkat = sc.nextInt();
 
-        // [Cabang Lainnya -> tidak memperoleh dana]
+            if (jumlahDokumen >= 4) {
+                if (peringkat >= 1 && peringkat <= 3) {
+                    status = "Berhak memperoleh dana penghargaan (Juara " + peringkat + ").";
+                } else {
+                    status = "Tidak memperoleh dana penghargaan (hanya untuk Juara 1/2/3).";
+                }
+            } else {
+                status = "Dokumen tidak lengkap (kurang " + (4 - jumlahDokumen)
+                        + " dokumen). Dana penghargaan tidak diberikan.";
+            }
+        } else if (jenis.equalsIgnoreCase("PKM")) {
+            // Cabang PKM
+            System.out.print("Jumlah dokumen  : ");
+            jumlahDokumen = sc.nextInt();
+            System.out.print("Status pendanaan PKM (1 = lolos, 0 = tidak lolos) : ");
+            statusPKM = sc.nextInt();
+
+            if (jumlahDokumen >= 4) {
+                if (statusPKM == 1) {
+                    status = "Berhak memperoleh dana penghargaan (PKM lolos pendanaan).";
+                } else {
+                    status = "Tidak memperoleh dana penghargaan (PKM tidak lolos pendanaan).";
+                }
+            } else {
+                status = "Dokumen tidak lengkap (kurang " + (4 - jumlahDokumen)
+                        + " dokumen). Dana penghargaan tidak diberikan.";
+            }
+        } else {
+            // Cabang Lainnya
+            status = "Tidak memperoleh dana penghargaan (jenis kegiatan tidak termasuk ketentuan).";
+        }
+
+        System.out.println("Status : " + status);
     }
 }
 ```
@@ -162,38 +227,38 @@ public class StudiKasus2[NoPresensi] {
 
 | Uji | Jenis Kegiatan | Dokumen | Peringkat / Pendanaan | Output yang Dihasilkan |
 | --- | --- | --- | --- | --- |
-| 1 | BAKORMA | 3 | Juara 1 | [isi output] |
-| 2 | Mandiri | 4 | 0 (bukan juara) | [isi output] |
-| 3 | pkm | 4 | 1 (lolos) | [isi output] |
-| 4 | Lainnya | 4 | (tidak ditanyakan) | [isi output] |
+| 1 | BAKORMA | 3 | Juara 1 | Dokumen tidak lengkap (kurang 1 dokumen). Dana penghargaan tidak diberikan. |
+| 2 | Mandiri | 4 | 0 (bukan juara) | Tidak memperoleh dana penghargaan (hanya untuk Juara 1/2/3). |
+| 3 | pkm | 4 | 1 (lolos) | Berhak memperoleh dana penghargaan (PKM lolos pendanaan). |
+| 4 | Lainnya | 4 | (tidak ditanyakan) | Tidak memperoleh dana penghargaan (jenis kegiatan tidak termasuk ketentuan). |
 
 #### 2.4.4 Riwayat Commit
 | No | Commit Message | Keterangan |
 | --- | --- | --- |
-| 1 | `SK2: cabang lomba` | [isi] |
-| 2 | `SK2: cabang PKM dan lainnya` | [isi] |
+| 1 | `SK2: cabang lomba` | Commit setelah cabang lomba (BELMAWA, BAKORMA, Mandiri) selesai |
+| 2 | `SK2: cabang PKM dan lainnya` | Commit setelah cabang PKM dan Lainnya selesai |
 
 ![Riwayat Commit SK2](./gambar/sk2_commit.png)
 
 #### 2.4.5 Jawaban Pertanyaan Analisis
 
 * **Pertanyaan 1:** Mengapa pengecekan jumlah dokumen dilakukan sebelum pengecekan peringkat/status PKM?
-* **Jawab:** [Tuliskan jawaban]
+* **Jawab:** Karena kelengkapan 4 dokumen adalah syarat wajib. Jika dokumen kurang dari 4, dana tidak diberikan meskipun mahasiswa juara atau PKM-nya lolos, sehingga pengecekan peringkat/status PKM tidak lagi menentukan hasil.
 
 * **Pertanyaan 2:** Bagaimana program menangani input jenis kegiatan dengan huruf besar/kecil yang berbeda?
-* **Jawab:** [Tuliskan jawaban]
+* **Jawab:** Program memakai `equalsIgnoreCase()` untuk membandingkan teks, sehingga "bakorma", "BAKORMA", maupun "Bakorma" dianggap sama. Input juga dirapikan dengan `trim()` untuk menghapus spasi di awal dan akhir.
 
 * **Pertanyaan 3:** Bagaimana program menghitung jumlah dokumen yang masih kurang?
-* **Jawab:** [Tuliskan jawaban]
+* **Jawab:** Dengan mengurangkan jumlah dokumen wajib dengan jumlah dokumen yang diupload, yaitu `4 - jumlahDokumen`. Misalnya dokumen yang diupload 3, maka kurang 1 dokumen.
 
 * **Pertanyaan 4:** Mengapa pada jenis kegiatan "Lainnya" program tidak perlu menanyakan jumlah dokumen dan peringkat?
-* **Jawab:** [Tuliskan jawaban]
+* **Jawab:** Karena kegiatan "Lainnya" tidak memenuhi ketentuan a maupun b, sehingga pasti tidak memperoleh dana penghargaan. Berapa pun jumlah dokumen dan peringkatnya tidak mengubah hasil, jadi pertanyaan tersebut tidak diperlukan.
 
 ---
 
 ### 2.5 Percobaan 4: Uji Silang Program Teman
 
-Pada percobaan ini, mahasiswa berpasangan dan bergantian: pemilik repository mengundang teman sebagai *collaborator*, lalu teman menguji program `StudiKasus2[NoPresensi].java` dan menuliskan hasil uji di `README.md`.
+Pada percobaan ini, mahasiswa berpasangan dan bergantian: pemilik repository mengundang teman sebagai *collaborator*, lalu teman menguji program `StudiKasus201.java` dan menuliskan hasil uji di `README.md`.
 
 #### 2.5.1 Data Kolaborasi
 * **Username teman (collaborator):** [Isi Username Teman]
@@ -212,15 +277,16 @@ Pada percobaan ini, mahasiswa berpasangan dan bergantian: pemilik repository men
 
 #### 2.5.3 Hasil Uji pada README.md
 
-```markdown
-Hasil Uji Studi Kasus 2 oleh [Nama Penguji]
 
-| No | Jenis | Dokumen | Juara/Dana | Output | Sesuai? |
-|----|-------|---------|------------|--------|---------|
-| 1  | [isi] | [isi]   | [isi]      | [isi]  | [Ya/Tidak] |
-| 2  | [isi] | [isi]   | [isi]      | [isi]  | [Ya/Tidak] |
-| 3  | [isi] | [isi]   | [isi]      | [isi]  | [Ya/Tidak] |
-```
+Hasil Uji Studi Kasus 2 oleh ACHMAD KAKA ANDRIAN
+
+| No | Jenis   | Dokumen | Juara/Dana        | Output                                                                  | Sesuai? |
+|----|---------|---------|-------------------|-------------------------------------------------------------------------|---------|
+| 1  | BAKORMA | 3       | Juara 1           | Dokumen tidak lengkap (kurang 1 dokumen). Dana penghargaan tidak diberikan. | Ya  |
+| 2  | Mandiri | 4       | 0 (bukan juara)   | Tidak memperoleh dana penghargaan (hanya untuk Juara 1/2/3).            | Ya      |
+| 3  | pkm     | 4       | 1 (lolos)         | Berhak memperoleh dana penghargaan (PKM lolos pendanaan).               | Ya      |
+| 4  | Lainnya | 4       | (tidak ditanyakan) | Tidak memperoleh dana penghargaan (jenis kegiatan tidak termasuk ketentuan). | Ya |
+
 
 #### 2.5.4 Jawaban Pertanyaan Analisis
 
@@ -251,7 +317,4 @@ Hasil Uji Studi Kasus 2 oleh [Nama Penguji]
 
 ## 3: KESIMPULAN
 
-[Tuliskan kesimpulan dengan bahasa sendiri. Beberapa poin yang bisa dibahas:
-1. Penggunaan struktur pemilihan dasar dan Nested IF pada studi kasus kasir dan validasi dana penghargaan.
-2. Alur kerja Git (clone, add, commit, push, pull) melalui VS Code.
-3. Manfaat kolaborasi menggunakan GitHub (collaborator, pull, riwayat commit).]
+Pada Jobsheet 6 ini dapat disimpulkan bahwa struktur pemilihan dasar digunakan untuk menentukan diskon dan kembalian pada program kasir, sedangkan Nested IF digunakan untuk memeriksa syarat secara bertahap pada validasi dana penghargaan prestasi, sehingga program dapat menampilkan alasan yang sesuai. Selain itu, Git dan GitHub melalui Visual Studio Code memudahkan penyimpanan pekerjaan dengan alur clone, add, commit, push, dan pull. Kolaborasi menggunakan GitHub juga memungkinkan teman menguji program dan mencatat hasilnya langsung di repository, serta setiap perubahan tercatat dalam riwayat commit.
