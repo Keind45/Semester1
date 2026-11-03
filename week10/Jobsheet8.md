@@ -183,7 +183,7 @@ Output aktual kode awal:
 
 Output target n = 5 adalah segitiga bertingkat 5 baris (`*`, `**`, `***`, `****`, `*****`).
 
-![Output Kode Awal](./gambar/p3_awal.png)
+![Output Kode Awal](p3_1.png)
 
 #### 2.3.2 Hasil Debug (n = 5)
 Dengan tambahan `System.out.print("[i=" + i + "] ");` setelah `while (i <= n) {`:
@@ -241,21 +241,7 @@ public class Triangle01 {
 ```
 
 #### 2.3.5 Hasil Running / Screenshot Output
-![Output Percobaan 3](./gambar/p3_output.png)
-
-```text
-Masukkan nilai n = 5
-*
-**
-***
-****
-*****
-*****
-****
-***
-**
-*
-```
+![Output Percobaan 3](/p3.png)
 
 #### 2.3.6 Jawaban Pertanyaan
 
@@ -511,6 +497,6 @@ public class Tugas301 {
 #### 3.3.2 Hasil Running / Screenshot Output
 ![Output Tugas 3](/t3.png)
 
-![Commit Tugas](./gambar/t_commit.png)
+![Commit Tugas](/st.png)
 
 ---
