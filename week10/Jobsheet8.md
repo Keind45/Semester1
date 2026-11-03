@@ -95,15 +95,7 @@ Pada percobaan ini, mahasiswa menggunakan *nested FOR* untuk mencetak persegi pa
 ```
 
 #### 2.2.2 Hasil Running / Screenshot Output
-![Output Percobaan 2](./gambar/p2_output.png)
-
-```text
-Masukkan jumlah baris: 3
-Masukkan jumlah kolom: 6
-******
-******
-******
-```
+![Output Percobaan 2](/p2.png)
 
 | Uji | Baris | Kolom | Bentuk Output |
 | --- | --- | --- | --- |
@@ -146,13 +138,8 @@ for (int i = 1; i <= baris; i++) {
 }
 ```
 Output untuk baris = 3 dan kolom = 6:
-```text
-######
-######
-######
-```
 
-![Output Modifikasi Percobaan 2](./gambar/p2_modifikasi.png)
+![Output Modifikasi Percobaan 2](/p2m.png)
 ![Commit Percobaan 2](./gambar/p2_commit.png)
 
 ---
@@ -183,19 +170,17 @@ Output aktual kode awal:
 
 Output target n = 5 adalah segitiga bertingkat 5 baris (`*`, `**`, `***`, `****`, `*****`).
 
-![Output Kode Awal](p3_1.png)
+![Output Kode Awal](/p3s.png)
 
 #### 2.3.2 Hasil Debug (n = 5)
 Dengan tambahan `System.out.print("[i=" + i + "] ");` setelah `while (i <= n) {`:
-```text
-[i=0] [i=1] *[i=2] **[i=3] ***[i=4] ****[i=5] *****
-```
+
 
 * **5a.** *Outer loop* dijalankan 6 kali (i = 0 sampai 5), tidak sama dengan jumlah baris yang diinginkan yaitu 5.
 * **5b.** Saat `i = 0`, tidak ada karakter `*` yang tercetak (0 bintang), karena kondisi `j < 0` langsung false.
 * **5c.** Semua karakter tampil dalam satu baris karena tidak ada `System.out.println()` yang memindahkan kursor ke baris baru.
 
-![Output Debug](./gambar/p3_debug.png)
+![Output Debug](/p3_1.png)
 
 #### 2.3.3 Proses Perbaikan
 * **Perbaikan 6a:** Menambahkan `System.out.println();` setelah *inner loop*, sebelum `i++`. Hasilnya bintang sudah turun per baris, tetapi masih ada satu baris kosong di awal (iterasi i = 0), sehingga total ada 6 baris.
@@ -254,7 +239,7 @@ public class Triangle01 {
 * **Pertanyaan 3:** Jelaskan perubahan inisialisasi, kondisi, dan perubahan nilai (*update*) pada *outer loop* yang diperlukan untuk membentuk segitiga terbalik.
 * **Jawab:** Inisialisasi diubah menjadi `i = n` (mulai dari baris terpanjang), kondisi menjadi `i >= 1` (berhenti setelah baris terpendek), dan *update* menjadi `i--` (panjang baris berkurang satu setiap iterasi).
 
-![Commit Percobaan 3](./gambar/p3_commit.png)
+![Commit Percobaan 3](/sp3.png)
 
 ---
 
