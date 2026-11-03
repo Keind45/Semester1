@@ -81,7 +81,7 @@ Untuk n = 9, outputnya `1 3 5 7 9 `.
 * **Pertanyaan 4:** Jelaskan mengapa perubahan *increment* `i++` menjadi `i--` (dengan kondisi tetap `i <= n`) membuat perulangan berjalan terus-menerus.
 * **Jawab:** `i` dimulai dari 1 lalu terus berkurang (0, -1, -2, ...), sehingga nilainya selalu lebih kecil dari n dan kondisi `i <= n` tetap true. Nilai `i` bergerak menjauhi batas, bukan mendekatinya, sehingga kondisi tidak pernah menjadi false. (Secara teknis nilai `int` akhirnya melewati batas terkecilnya lalu berputar ke nilai terbesar, tetapi itu butuh miliaran iterasi sehingga tidak berhenti dalam waktu wajar.)
 
-![Commit Percobaan 1](./gambar/p1_commit.png)
+![Commit Percobaan 1](/sp1.png)
 
 ---
 
@@ -308,7 +308,7 @@ public class NilaiKelompok01 {
 ![Output Percobaan 4](/p4.png)
 
 
-#### 2.4.3 Jawaban Pertanyaan
+![alt text](image.png)#### 2.4.3 Jawaban Pertanyaan
 
 * **Pertanyaan 1:** Mengapa `totalNilai` perlu di-reset di dalam *outer loop*, tetapi `rataTertinggi` tidak boleh di-reset pada setiap kelompok?
 * **Jawab:** `totalNilai` menampung jumlah nilai satu kelompok saja, sehingga harus kembali ke 0 di awal setiap kelompok agar tidak tercampur dengan nilai kelompok sebelumnya. `rataTertinggi` menyimpan rekor dari seluruh kelompok yang sudah diproses; jika di-reset, rekor sebelumnya hilang dan perbandingan hanya terjadi dengan nilai awal, sehingga hasil akhir tidak lagi mewakili kelompok terbaik secara keseluruhan.
