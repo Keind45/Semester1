@@ -30,7 +30,7 @@ public class NilaiKelompok01 {
                     totalNilai += nilai;
                 }
 
-                double rataNilai =totalNilai / jumlahPenilai;
+                double rataNilai = totalNilai / jumlahPenilai;
                 System.out.println("Kelompok " + nomorKelompok
                         + ": nilai rata rata = " + rataNilai);
                 
