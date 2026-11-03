@@ -406,7 +406,7 @@ public class Tugas201 {
 }
 ```
 
-#### 3.2.2 Hasil Running / Scree![alt text](image.png)nshot Output
+#### 3.2.2 Hasil Running / Screenshot Output
 ![Output Tugas 2](t2.png)
 
 ---
