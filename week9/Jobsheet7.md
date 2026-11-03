@@ -120,7 +120,7 @@ Hasil dengan data yang sama seperti verifikasi: tertinggi 90.1, terendah 55.3, l
 * **Pertanyaan 5:** Commit dan push kode program ke Github.
 * **Jawab:** Sudah dilakukan.
 
-![Commit Percobaan 1](/sp.png)
+![Commit Percobaan 1](/csj.png)
 
 ---
 
@@ -203,7 +203,7 @@ if (nilai > 80 && nilai <= 100) {
 * **Pertanyaan 5:** Commit dan push kode program ke Github.
 * **Jawab:** Sudah dilakukan.
 
-![Commit Percobaan 2](./gambar/p2_commit.png)
+![Commit Percobaan 2](/csj.png)
 
 ---
 
@@ -265,7 +265,7 @@ public class KafeDoWhile01 {
 * **Pertanyaan 4:** Mengapa perulangan DO-WHILE tersebut tetap berjalan meskipun tidak ada komponen inisialisasi dan update?
 * **Jawab:** Karena perulangan tidak bergantung pada variabel penghitung. Kondisinya adalah `true` yang selalu terpenuhi, dan penghentiannya dikendalikan oleh input pengguna melalui `break`. Inisialisasi dan update hanya diperlukan jika perulangan dikontrol oleh sebuah counter seperti `i`.
 
-![Commit Percobaan 3](./gambar/p3_commit.png)
+![Commit Percobaan 3](/csj.png)
 
 ---
 
@@ -366,6 +366,6 @@ public class PembayaranParkir {
 
 Perhitungan: mobil 2 jam x 3000 = 6000, motor 3 jam x 2000 = 6000, total = 12000.
 
-![Commit Tugas](./gambar/t_commit.png)
+![Commit Tugas](/csj.png)
 
 ---
