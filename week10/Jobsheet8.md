@@ -46,7 +46,7 @@ public class Star01 {
 ```
 
 #### 2.1.2 Hasil Running / Screenshot Output
-![Output Percobaan 1](./gambar/p1_output.png)
+![Output Percobaan 1](/p1.png)
 
 | Uji | Input n | Output | Jumlah `*` |
 | --- | --- | --- | --- |
@@ -76,7 +76,7 @@ for (int i = 1; i <= n; i += 2) {
 ```
 Untuk n = 9, outputnya `1 3 5 7 9 `.
 
-![Output Pertanyaan 3](./gambar/p1_q3.png)
+![Output Pertanyaan 3](/p1_3.png)
 
 * **Pertanyaan 4:** Jelaskan mengapa perubahan *increment* `i++` menjadi `i--` (dengan kondisi tetap `i <= n`) membuat perulangan berjalan terus-menerus.
 * **Jawab:** `i` dimulai dari 1 lalu terus berkurang (0, -1, -2, ...), sehingga nilainya selalu lebih kecil dari n dan kondisi `i <= n` tetap true. Nilai `i` bergerak menjauhi batas, bukan mendekatinya, sehingga kondisi tidak pernah menjadi false. (Secara teknis nilai `int` akhirnya melewati batas terkecilnya lalu berputar ke nilai terbesar, tetapi itu butuh miliaran iterasi sehingga tidak berhenti dalam waktu wajar.)
@@ -140,7 +140,7 @@ for (int i = 1; i <= baris; i++) {
 Output untuk baris = 3 dan kolom = 6:
 
 ![Output Modifikasi Percobaan 2](/p2m.png)
-![Commit Percobaan 2](./gambar/p2_commit.png)
+![Commit Percobaan 2](/sp2.png)
 
 ---
 
