@@ -51,7 +51,7 @@ public class SiakadFor01 {
 ```
 
 #### 2.1.2 Hasil Running / Screenshot Output
-![Output Percobaan 1](/p1.png)
+![Output Percobaan 1](p1.png)
 
 #### 2.1.3 Jawaban Pertanyaan
 
@@ -115,12 +115,12 @@ public class SiakadFor01 {
 
 Hasil dengan data yang sama seperti verifikasi: tertinggi 90.1, terendah 55.3, lulus 9, tidak lulus 1.
 
-![Output Modifikasi Percobaan 1](/p1.png)
+![Output Modifikasi Percobaan 1](p1.png)
 
 * **Pertanyaan 5:** Commit dan push kode program ke Github.
 * **Jawab:** Sudah dilakukan.
 
-![Commit Percobaan 1](/csj.png)
+![Commit Percobaan 1](csj.png)
 
 ---
 
@@ -171,7 +171,7 @@ public class SiakadWhile01 {
 ```
 
 #### 2.2.2 Hasil Running / Screenshot Output
-![Output Percobaan 2](/p2.png)
+![Output Percobaan 2](p2.png)
 
 #### 2.2.3 Jawaban Pertanyaan
 
@@ -198,12 +198,12 @@ if (nilai > 80 && nilai <= 100) {
     // ... cabang lain tidak berubah
 ```
 
-![Output Modifikasi Percobaan 2](/p2_5.png)
+![Output Modifikasi Percobaan 2](p2_5.png)
 
 * **Pertanyaan 5:** Commit dan push kode program ke Github.
 * **Jawab:** Sudah dilakukan.
 
-![Commit Percobaan 2](/csj.png)
+![Commit Percobaan 2](csj.png)
 
 ---
 
@@ -249,7 +249,7 @@ public class KafeDoWhile01 {
 ```
 
 #### 2.3.2 Hasil Running / Screenshot Output
-![Output Percobaan 3](/p3.png)
+![Output Percobaan 3](p3.png)
 
 #### 2.3.3 Jawaban Pertanyaan
 
@@ -265,7 +265,7 @@ public class KafeDoWhile01 {
 * **Pertanyaan 4:** Mengapa perulangan DO-WHILE tersebut tetap berjalan meskipun tidak ada komponen inisialisasi dan update?
 * **Jawab:** Karena perulangan tidak bergantung pada variabel penghitung. Kondisinya adalah `true` yang selalu terpenuhi, dan penghentiannya dikendalikan oleh input pengguna melalui `break`. Inisialisasi dan update hanya diperlukan jika perulangan dikontrol oleh sebuah counter seperti `i`.
 
-![Commit Percobaan 3](/csj.png)
+![Commit Percobaan 3](csj.png)
 
 ---
 
@@ -323,7 +323,7 @@ public class TiketBioskop {
 ```
 
 #### 3.1.2 Hasil Running / Screenshot Output
-![Output Tugas 1](/t1.png)
+![Output Tugas 1](t1.png)
 
 ---
 
@@ -362,10 +362,10 @@ public class PembayaranParkir {
 ```
 
 #### 3.2.2 Hasil Running / Screenshot Output
-![Output Tugas 2](/t2.png)
+![Output Tugas 2](t2.png)
 
 Perhitungan: mobil 2 jam x 3000 = 6000, motor 3 jam x 2000 = 6000, total = 12000.
 
-![Commit Tugas](/csj.png)
+![Commit Tugas](csj.png)
 
 ---

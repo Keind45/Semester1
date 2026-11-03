@@ -46,7 +46,7 @@ public class Star01 {
 ```
 
 #### 2.1.2 Hasil Running / Screenshot Output
-![Output Percobaan 1](/p1.png)
+![Output Percobaan 1](p1.png)
 
 | Uji | Input n | Output | Jumlah `*` |
 | --- | --- | --- | --- |
@@ -76,12 +76,12 @@ for (int i = 1; i <= n; i += 2) {
 ```
 Untuk n = 9, outputnya `1 3 5 7 9 `.
 
-![Output Pertanyaan 3](/p1_3.png)
+![Output Pertanyaan 3](p1_3.png)
 
 * **Pertanyaan 4:** Jelaskan mengapa perubahan *increment* `i++` menjadi `i--` (dengan kondisi tetap `i <= n`) membuat perulangan berjalan terus-menerus.
 * **Jawab:** `i` dimulai dari 1 lalu terus berkurang (0, -1, -2, ...), sehingga nilainya selalu lebih kecil dari n dan kondisi `i <= n` tetap true. Nilai `i` bergerak menjauhi batas, bukan mendekatinya, sehingga kondisi tidak pernah menjadi false. (Secara teknis nilai `int` akhirnya melewati batas terkecilnya lalu berputar ke nilai terbesar, tetapi itu butuh miliaran iterasi sehingga tidak berhenti dalam waktu wajar.)
 
-![Commit Percobaan 1](/sp1.png)
+![Commit Percobaan 1](sp1.png)
 
 ---
 
@@ -95,7 +95,7 @@ Pada percobaan ini, mahasiswa menggunakan *nested FOR* untuk mencetak persegi pa
 ```
 
 #### 2.2.2 Hasil Running / Screenshot Output
-![Output Percobaan 2](/p2.png)
+![Output Percobaan 2](p2.png)
 
 | Uji | Baris | Kolom | Bentuk Output |
 | --- | --- | --- | --- |
@@ -139,8 +139,8 @@ for (int i = 1; i <= baris; i++) {
 ```
 Output untuk baris = 3 dan kolom = 6:
 
-![Output Modifikasi Percobaan 2](/p2m.png)
-![Commit Percobaan 2](/sp2.png)
+![Output Modifikasi Percobaan 2](p2m.png)
+![Commit Percobaan 2](sp2.png)
 
 ---
 
@@ -170,7 +170,7 @@ Output aktual kode awal:
 
 Output target n = 5 adalah segitiga bertingkat 5 baris (`*`, `**`, `***`, `****`, `*****`).
 
-![Output Kode Awal](/p3s.png)
+![Output Kode Awal](p3s.png)
 
 #### 2.3.2 Hasil Debug (n = 5)
 Dengan tambahan `System.out.print("[i=" + i + "] ");` setelah `while (i <= n) {`:
@@ -180,7 +180,7 @@ Dengan tambahan `System.out.print("[i=" + i + "] ");` setelah `while (i <= n) {`
 * **5b.** Saat `i = 0`, tidak ada karakter `*` yang tercetak (0 bintang), karena kondisi `j < 0` langsung false.
 * **5c.** Semua karakter tampil dalam satu baris karena tidak ada `System.out.println()` yang memindahkan kursor ke baris baru.
 
-![Output Debug](/p3_1.png)
+![Output Debug](p3_1.png)
 
 #### 2.3.3 Proses Perbaikan
 * **Perbaikan 6a:** Menambahkan `System.out.println();` setelah *inner loop*, sebelum `i++`. Hasilnya bintang sudah turun per baris, tetapi masih ada satu baris kosong di awal (iterasi i = 0), sehingga total ada 6 baris.
@@ -226,7 +226,7 @@ public class Triangle01 {
 ```
 
 #### 2.3.5 Hasil Running / Screenshot Output
-![Output Percobaan 3](/p3.png)
+![Output Percobaan 3](p3.png)
 
 #### 2.3.6 Jawaban Pertanyaan
 
@@ -239,7 +239,7 @@ public class Triangle01 {
 * **Pertanyaan 3:** Jelaskan perubahan inisialisasi, kondisi, dan perubahan nilai (*update*) pada *outer loop* yang diperlukan untuk membentuk segitiga terbalik.
 * **Jawab:** Inisialisasi diubah menjadi `i = n` (mulai dari baris terpanjang), kondisi menjadi `i >= 1` (berhenti setelah baris terpendek), dan *update* menjadi `i--` (panjang baris berkurang satu setiap iterasi).
 
-![Commit Percobaan 3](/sp3.png)
+![Commit Percobaan 3](sp3.png)
 
 ---
 
@@ -305,10 +305,9 @@ public class NilaiKelompok01 {
 ```
 
 #### 2.4.2 Hasil Running / Screenshot Output
-![Output Percobaan 4](/p4.png)
+![Output Percobaan 4](p4.png)
 
-
-![alt text](image.png)#### 2.4.3 Jawaban Pertanyaan
+Jawaban Pertanyaan
 
 * **Pertanyaan 1:** Mengapa `totalNilai` perlu di-reset di dalam *outer loop*, tetapi `rataTertinggi` tidak boleh di-reset pada setiap kelompok?
 * **Jawab:** `totalNilai` menampung jumlah nilai satu kelompok saja, sehingga harus kembali ke 0 di awal setiap kelompok agar tidak tercampur dengan nilai kelompok sebelumnya. `rataTertinggi` menyimpan rekor dari seluruh kelompok yang sudah diproses; jika di-reset, rekor sebelumnya hilang dan perbandingan hanya terjadi dengan nilai awal, sehingga hasil akhir tidak lagi mewakili kelompok terbaik secara keseluruhan.
@@ -328,7 +327,7 @@ public class NilaiKelompok01 {
   2. **FOR (tengah):** memproses penilai dari 1 sampai `jumlahPenilai` (jumlah pengulangan sudah diketahui) dan menjumlahkan nilainya.
   3. **DO-WHILE (dalam):** meminta input nilai minimal sekali dan mengulanginya selama nilai berada di luar rentang 0-100 (validasi input).
 
-![Commit Percobaan 4](/sp4.png)
+![Commit Percobaan 4](sp4.png)
 
 ---
 
@@ -370,7 +369,7 @@ public class Tugas101 {
 ```
 
 #### 3.1.2 Hasil Running / Screenshot Output
-![Output Tugas 1](/t1.png)
+![Output Tugas 1](t1.png)
 
 ---
 
@@ -408,7 +407,7 @@ public class Tugas201 {
 ```
 
 #### 3.2.2 Hasil Running / Scree![alt text](image.png)nshot Output
-![Output Tugas 2](/t2.png)
+![Output Tugas 2](t2.png)
 
 ---
 
@@ -480,8 +479,8 @@ public class Tugas301 {
 ```
 
 #### 3.3.2 Hasil Running / Screenshot Output
-![Output Tugas 3](/t3.png)
+![Output Tugas 3](t3.png)
 
-![Commit Tugas](/st.png)
+![Commit Tugas](st.png)
 
 ---
