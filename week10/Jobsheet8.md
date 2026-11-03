@@ -357,7 +357,7 @@ public class NilaiKelompok01 {
   2. **FOR (tengah):** memproses penilai dari 1 sampai `jumlahPenilai` (jumlah pengulangan sudah diketahui) dan menjumlahkan nilainya.
   3. **DO-WHILE (dalam):** meminta input nilai minimal sekali dan mengulanginya selama nilai berada di luar rentang 0-100 (validasi input).
 
-![Commit Percobaan 4](./gambar/p4_commit.png)
+![Commit Percobaan 4](/sp4.png)
 
 ---
 
@@ -399,17 +399,7 @@ public class Tugas101 {
 ```
 
 #### 3.1.2 Hasil Running / Screenshot Output
-![Output Tugas 1](./gambar/t1_output.png)
-
-```text
-Masukkan nilai n = 5
-1
-1 2
-1 2 3
-1 2 3 4
-1 2 3 4 5
-Total angka tercetak: 15
-```
+![Output Tugas 1](/t1.png)
 
 ---
 
@@ -446,17 +436,8 @@ public class Tugas201 {
 }
 ```
 
-#### 3.2.2 Hasil Running / Screenshot Output
-![Output Tugas 2](./gambar/t2_output.png)
-
-```text
-Masukkan nilai n = 4
-   1   2   3   4
-   2   4   6   8
-   3   6   9  12
-   4   8  12  16
-Jumlah seluruh angka: 100
-```
+#### 3.2.2 Hasil Running / Scree![alt text](image.png)nshot Output
+![Output Tugas 2](/t2.png)
 
 ---
 
@@ -528,29 +509,8 @@ public class Tugas301 {
 ```
 
 #### 3.3.2 Hasil Running / Screenshot Output
-![Output Tugas 3](./gambar/t3_output.png)
-
-```text
-Masukkan jumlah toko: 2
-Toko 1
-  Jumlah pelanggan: 2
-    Jumlah barang pelanggan 1: 3
-    Jumlah barang pelanggan 2: 2
-Toko 1 - pelanggan: 2, total barang: 5
-Toko 2
-  Jumlah pelanggan: 3
-    Jumlah barang pelanggan 1: 1
-    Jumlah barang pelanggan 2: 4
-    Jumlah barang pelanggan 3: 2
-Toko 2 - pelanggan: 3, total barang: 7
-Total barang seluruh toko: 12
-Toko dengan barang terbanyak: 2
-```
+![Output Tugas 3](/t3.png)
 
 ![Commit Tugas](./gambar/t_commit.png)
 
 ---
-
-## 4: KESIMPULAN
-
-Pada Jobsheet 8 ini dapat disimpulkan bahwa perulangan bersarang (*nested loop*) adalah perulangan yang berada di dalam perulangan lain, di mana *inner loop* dijalankan secara penuh untuk setiap satu iterasi *outer loop*. Pada pola bintang, *outer loop* mengatur baris dan *inner loop* mengatur kolom, sedangkan `System.out.println()` diperlukan untuk pindah baris. Variabel penghitung *inner loop* perlu di-reset pada setiap iterasi *outer loop*, dan variabel yang menyimpan hasil keseluruhan (seperti rata-rata tertinggi) tidak boleh di-reset. Selain itu, ketiga jenis perulangan (FOR, WHILE, DO-WHILE) dapat digabungkan dalam satu program, seperti pada studi kasus nilai kelompok, dengan peran yang sesuai: WHILE untuk kelompok, FOR untuk penilai, dan DO-WHILE untuk validasi input.
