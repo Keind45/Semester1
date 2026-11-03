@@ -51,22 +51,7 @@ public class SiakadFor01 {
 ```
 
 #### 2.1.2 Hasil Running / Screenshot Output
-![Output Percobaan 1](./gambar/p1_output.png)
-
-```text
-Masukkan nilai mahasiswa ke-1: 76.5
-Masukkan nilai mahasiswa ke-2: 82.3
-Masukkan nilai mahasiswa ke-3: 62.1
-Masukkan nilai mahasiswa ke-4: 88.4
-Masukkan nilai mahasiswa ke-5: 65.9
-Masukkan nilai mahasiswa ke-6: 67.9
-Masukkan nilai mahasiswa ke-7: 90.1
-Masukkan nilai mahasiswa ke-8: 55.3
-Masukkan nilai mahasiswa ke-9: 73.7
-Masukkan nilai mahasiswa ke-10: 78.6
-Nilai tertinggi: 90.1
-Nilai terendah: 55.3
-```
+![Output Percobaan 1](/p1.png)
 
 #### 2.1.3 Jawaban Pertanyaan
 
@@ -130,12 +115,12 @@ public class SiakadFor01 {
 
 Hasil dengan data yang sama seperti verifikasi: tertinggi 90.1, terendah 55.3, lulus 9, tidak lulus 1.
 
-![Output Modifikasi Percobaan 1](./gambar/p1_modifikasi.png)
+![Output Modifikasi Percobaan 1](/p1.png)
 
 * **Pertanyaan 5:** Commit dan push kode program ke Github.
 * **Jawab:** Sudah dilakukan.
 
-![Commit Percobaan 1](./gambar/p1_commit.png)
+![Commit Percobaan 1](/sp.png)
 
 ---
 
@@ -186,25 +171,7 @@ public class SiakadWhile01 {
 ```
 
 #### 2.2.2 Hasil Running / Screenshot Output
-![Output Percobaan 2](./gambar/p2_output.png)
-
-```text
-Masukkan jumlah mahasiswa: 5
-Masukkan nilai mahasiswa ke-1: 85
-Nilai mahasiswa ke-1 adalah A
-Masukkan nilai mahasiswa ke-2: 63
-Nilai mahasiswa ke-2 adalah C+
-Masukkan nilai mahasiswa ke-3: 101
-Nilai tidak valid. Masukkan lagi nilai yang valid!
-Masukkan nilai mahasiswa ke-3: 23
-Nilai mahasiswa ke-3 adalah E
-Masukkan nilai mahasiswa ke-4: -15
-Nilai tidak valid. Masukkan lagi nilai yang valid!
-Masukkan nilai mahasiswa ke-4: 70
-Nilai mahasiswa ke-4 adalah B
-Masukkan nilai mahasiswa ke-5: 55
-Nilai mahasiswa ke-5 adalah C
-```
+![Output Percobaan 2](/p2.png)
 
 #### 2.2.3 Jawaban Pertanyaan
 
@@ -231,7 +198,7 @@ if (nilai > 80 && nilai <= 100) {
     // ... cabang lain tidak berubah
 ```
 
-![Output Modifikasi Percobaan 2](./gambar/p2_modifikasi.png)
+![Output Modifikasi Percobaan 2](/p2_5.png)
 
 * **Pertanyaan 5:** Commit dan push kode program ke Github.
 * **Jawab:** Sudah dilakukan.
@@ -282,23 +249,7 @@ public class KafeDoWhile01 {
 ```
 
 #### 2.3.2 Hasil Running / Screenshot Output
-![Output Percobaan 3](./gambar/p3_output.png)
-
-```text
-Masukkan nama pelanggan (ketik 'batal' untuk keluar): Rena
-Jumlah kopi: 3
-Jumlah teh: 0
-Jumlah roti: 1
-Total yang harus dibayar: Rp 56000
-Masukkan nama pelanggan (ketik 'batal' untuk keluar): Yuni
-Jumlah kopi: 1
-Jumlah teh: 4
-Jumlah roti: 2
-Total yang harus dibayar: Rp 80000
-Masukkan nama pelanggan (ketik 'batal' untuk keluar): BATAL
-Transaksi dibatalkan.
-Semua transaksi selesai.
-```
+![Output Percobaan 3](/p3.png)
 
 #### 2.3.3 Jawaban Pertanyaan
 
@@ -328,7 +279,7 @@ Program menghitung total tiket yang terjual dan total penjualan dalam satu hari.
 ```java
 import java.util.Scanner;
 
-public class TugasBioskop01 {
+public class TiketBioskop {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
         int hargaTiket = 50000;
@@ -372,21 +323,7 @@ public class TugasBioskop01 {
 ```
 
 #### 3.1.2 Hasil Running / Screenshot Output
-![Output Tugas 1](./gambar/t1_output.png)
-
-```text
-Masukkan jumlah tiket (0 untuk selesai): 3
-Diskon: 0%, total bayar: Rp 150000
-Masukkan jumlah tiket (0 untuk selesai): 5
-Diskon: 10%, total bayar: Rp 225000
-Masukkan jumlah tiket (0 untuk selesai): -2
-Input tidak valid. Masukkan lagi jumlah tiket!
-Masukkan jumlah tiket (0 untuk selesai): 12
-Diskon: 15%, total bayar: Rp 510000
-Masukkan jumlah tiket (0 untuk selesai): 0
-Total tiket terjual: 20
-Total penjualan: Rp 885000
-```
+![Output Tugas 1](/t1.png)
 
 ---
 
@@ -398,7 +335,7 @@ Program menghitung total pembayaran parkir beberapa kendaraan sesuai flowchart: 
 ```java
 import java.util.Scanner;
 
-public class TugasParkir01 {
+public class PembayaranParkir {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
         int jenis, durasi, total = 0;
@@ -425,23 +362,10 @@ public class TugasParkir01 {
 ```
 
 #### 3.2.2 Hasil Running / Screenshot Output
-![Output Tugas 2](./gambar/t2_output.png)
-
-```text
-Masukkan jenis kendaraan (1 = mobil, 2 = motor, 0 = keluar): 1
-Masukkan durasi parkir (jam): 2
-Masukkan jenis kendaraan (1 = mobil, 2 = motor, 0 = keluar): 2
-Masukkan durasi parkir (jam): 3
-Masukkan jenis kendaraan (1 = mobil, 2 = motor, 0 = keluar): 0
-Total pembayaran parkir: Rp 12000
-```
+![Output Tugas 2](/t2.png)
 
 Perhitungan: mobil 2 jam x 3000 = 6000, motor 3 jam x 2000 = 6000, total = 12000.
 
 ![Commit Tugas](./gambar/t_commit.png)
 
 ---
-
-## 4: KESIMPULAN
-
-Pada Jobsheet 7 ini dapat disimpulkan bahwa perulangan digunakan untuk menjalankan sekelompok perintah secara berulang tanpa menulis kode yang sama berkali-kali. Perulangan *FOR* cocok dipakai jika jumlah pengulangan sudah diketahui, seperti pada input 10 nilai mahasiswa. Perulangan *WHILE* cocok jika kondisi dicek di awal dan jumlah pengulangan bisa dinamis, seperti pada validasi input nilai. Perulangan *DO-WHILE* menjalankan badan perulangan minimal satu kali dan cocok untuk proses yang terus berulang sampai pengguna menghentikannya, seperti transaksi kasir. Perintah `break` dan `continue` membantu mengendalikan alur perulangan, yaitu menghentikan perulangan atau melewati iterasi saat input tidak valid.
